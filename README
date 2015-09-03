@@ -4,5 +4,3 @@ We want to capture errors in production but we can't run react in production mod
 I've gone through and changed the slow performance checks to check "process.env.REACT_SLOW_DEBUG" instead of "process.env.NODE_ENV".
 
 So we can always have NODE_ENV as dev and change REACT_SLOW_DEBUG if we want the slow debugging extras.
-
-The tests still use normal react from npm because I couldn't get it to work.
